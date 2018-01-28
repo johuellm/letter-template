@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Elmueller Formal Letter
+% LaTeX Template
+% Version 1.3 (20/11/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Micha Elmueller (http://micha.elmueller.net/) with modifications by 
+% Vel (vel@LaTeXTemplates.com)
+% johuellm
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	pagenumber=false, % Removes page numbers from page 2 onwards when false
+	parskip=half, % Separates paragraphs with some whitespace, use parskip=full for more space or comment out to return to default
+	foldmarks=true, % Prints small fold marks on the left of the page
+	addrfield=true,
+	fromphone=true,
+	fromemail=true,
+	fromurl=true,
+	locfield=wide
+	]{scrlttr2}
+
+\usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
+\usepackage{stix} % Use the Stix font by default
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{xhfill}
+\usepackage[ngerman]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\renewcommand*{\raggedsignature}{\raggedright} % Stop the signature from indenting
+
+\def\Vhrulefill{\leavevmode\leaders\hrule height 1.0ex depth \dimexpr0.4pt-0.7ex\hfill\kern0pt}
+
+\pagestyle{myheadings}
+
+\makeatletter
+  \@setplength{lochpos}{\oddsidemargin}
+  \@addtoplength{lochpos}{1in}
+  \@setplength{toaddrhpos}{\oddsidemargin}
+  \@addtoplength{toaddrhpos}{1in}
+	\@addtoplength{toaddrwidth}{-10mm}
+	\@setplength{firstfootwidth}{\textwidth}
+	\@setplength{firstheadwidth}{\textwidth}
+\makeatother
+
+\setkomavar{firsthead}{%
+	\includegraphics[width=\textwidth]{forest2_bw.jpg}
+}
+
+\setkomavar{location}{%
+  \raggedleft
+  \footnotesize
+  \usekomavar{fromname}\\
+  \usekomavar{fromaddress}\\
+  \usekomavar{fromphone}\\
+  \vspace{2mm}
+  \usekomavar{fromemail}\\
+  \usekomavar{fromurl}
+}
+
+\setkomavar{firstfoot}{%
+	\normalfont
+	\sffamily
+	\footnotesize
+	\color{lightgray}
+	\Vhrulefill\quad MY FOOTER PHRASE\quad\Vhrulefill
+}
+
+\setkomavar{nextfoot}{%
+\usekomavar{firstfoot}
+}
+
+%----------------------------------------------------------------------------------------
+%	YOUR INFORMATION AND LETTER DATE
+%----------------------------------------------------------------------------------------
+
+\setkomavar{fromname}{Anna Muster} % Your name used in the from address
+\setkomavar{fromaddress}{Muster-Allee 11\\ 34459 Musterstadt} % Your address
+\setkomavar{fromphone}[]{+49 123 555333}
+\setkomavar{fromemail}[]{anna.muster@gmail.com}
+\setkomavar{fromurl}[]{www.anna-muster.de}
+
+\setkomavar{signature}{Anna Muster} % Your name used in the signature
+
+\setkomavar{date}{\today} % Date of the letter
+
+% \setkomavar{subject}{Betreff!}
+
+% \setkomavar{title}{Titel!}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE
+%----------------------------------------------------------------------------------------
+ 
+\begin{letter}{Max Mustermann\\ Mustermannstraße 24 \\ 49991 Musterhausen} % Addressee name and address
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Hallo Max,}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet tellus vel justo porta et semper libero rutrum. Duis vestibulum sagittis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac velit eu dolor lobortis fringilla. Quisque imperdiet porta ante in pretium. Maecenas facilisis varius metus et blandit. Proin rhoncus arcu non ante elementum non vehicula sem varius. Morbi feugiat, elit eget tristique posuere, urna eros vestibulum nibh, at tempus neque justo nec enim.
+
+Curabitur id est enim. Suspendisse potenti. Fusce eleifend sodales tortor, a interdum tortor sollicitudin vel. Morbi vel tellus enim, eget hendrerit ligula. Proin molestie suscipit erat, eget consectetur orci convallis at. Ut vestibulum, odio vitae blandit dignissim, dui magna auctor leo, at molestie augue magna sed nisi. Phasellus ipsum magna, fringilla id tempor id, tristique vitae mauris. Maecenas sed orci vel eros consectetur ultrices.
+
+Mauris enim velit, feugiat at venenatis eu, scelerisque vitae mauris. Nullam accumsan facilisis mauris sagittis iaculis. Mauris condimentum dictum libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam consequat malesuada feugiat. Vestibulum tempor commodo turpis id gravida.
+
+\closing{Herzliche Grüße}
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{document}
+
