@@ -9,3 +9,9 @@ Features:
 ## Screenshot
 
 ![Screenshot of Template](screenshot.PNG)
+
+
+## Remarks
+
+Header image from [http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/](http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/)].
+
