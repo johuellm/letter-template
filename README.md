@@ -13,5 +13,5 @@ Features:
 
 ## Remarks
 
-Header image from [http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/](http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/)].
+Header image from [http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/](http://hdwallpaperfx.com/minimal-sunset-forest-wallpaper/).
 
