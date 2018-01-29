@@ -1,5 +1,5 @@
 ---
-to: |          # required, YAML multiline value
+to: |          # required, YAML multiline value, DOUBLE SPACE AT END
   Max Mustermann 
   Reynholm Industries  
   123 Carenden Road  
