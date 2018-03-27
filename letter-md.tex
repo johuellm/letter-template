@@ -57,9 +57,16 @@
 	\@setplength{firstheadwidth}{\textwidth}
 \makeatother
 
+
+$if(image)$
 \setkomavar{firsthead}{%
 	\includegraphics[width=\textwidth]{forest2_bw.jpg}
 }
+$else$
+\setkomavar{firsthead}{%
+
+}
+$endif$
 
 \setkomavar{location}{%
   \raggedleft

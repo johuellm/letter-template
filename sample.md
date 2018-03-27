@@ -8,7 +8,8 @@ to: |          # required, YAML multiline value, DOUBLE SPACE AT END
   GREAT BRITAIN
 subject: Betreff
 opening: Lieber Max,
-closing: Herzliche Grüße,
+closing: Herzliche Grüße
+image: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet tellus vel justo porta et semper libero rutrum. Duis vestibulum sagittis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac velit eu dolor lobortis fringilla. Quisque imperdiet porta ante in pretium. Maecenas facilisis varius metus et blandit. Proin rhoncus arcu non ante elementum non vehicula sem varius. Morbi feugiat, elit eget tristique posuere, urna eros vestibulum nibh, at tempus neque justo nec enim.
