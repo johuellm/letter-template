@@ -37,9 +37,16 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{xhfill}
+\usepackage{hyperref}
 \usepackage[ngerman]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
 
 \renewcommand*{\raggedsignature}{\raggedright} % Stop the signature from indenting
 
